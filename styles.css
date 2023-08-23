@@ -12,6 +12,7 @@ body{
 a{
     text-decoration: none;
     color: black;
+    width: fit-content;
 }
 a:hover{
     text-decoration: underline;
@@ -44,16 +45,17 @@ nav{
 #contentHolder{
     background-color: #e0e0e0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding:60px 0px;
     width: 100%;
     height: 100%;
     background-image: url(images/triangles_pattern.webp);
-    padding-top: 30px;
 }
 img{
     object-fit: cover;
     width: 275px ;
     height: 400px;
+ 
 }
 #infocard{
     width: 275px;
@@ -62,25 +64,50 @@ img{
     flex-direction: column;
     justify-content: space-between;
 }
-#contain{
-    height: 100%;
-}
+
 #infocard h1{
     font-size: 40pt;
     font-weight: 900;
 }
-.images{
-    position: relative;
-
+#infocard p{
+    font-size: 17pt;
+}
+#infocard a{
+    font-weight: 700;
 }
 .green{
     background-color: #8ec828;
     text-align: right;
-    padding: 5px;
-    display: inline-block; 
+    padding: 7px; 
+    height: fit-content;
+
 }
 .white{
     background-color: #fff;
     text-align: right;
     padding: 5px;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+}
+.apple,.pasta,.shrimp{
+    width: 275px;
+    height: 375px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    background-size: cover;
+}
+.apple{
+    background-image: url(images/apple-breakfast-quinoa-7.jpg);
+    background-position: center;
+}
+.shrimp{
+    background-position: center;
+    background-image: url(images/Screenshot_208.jpg);
+}
+.pasta{
+    background-position: center;
+    background-image: url(images/pasta-salad-recipe-for-lunch.jpg);
 }
